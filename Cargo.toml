@@ -1,0 +1,13 @@
+[package]
+name = "ct-snooper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4"
+crossterm = "0.28.1"
+structopt = "0.3"
+
+[profile.release]
+strip = true
+panic = "abort"
